@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #2d89ef;
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        header .search-bar {
+            flex: 1;
+            margin: 0 20px;
+        }
+        header .search-bar input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+        }
+        header .user-actions {
+            display: flex;
+            gap: 15px;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #fff;
+            position: fixed;
+            top: 60px;
+            bottom: 0;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 15px;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .sidebar ul li a:hover {
+            background-color: #e7effc;
+        }
+        .main-content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin: 0 0 15px;
+            color: #2d89ef;
+        }
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            flex: 1;
+            min-width: 200px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Eventify Dashboard</div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+    </div>
+    <div class="user-actions">
+        <button>Notifications</button>
+        <button>Profile</button>
+    </div>
+</header>
+
+<div class="sidebar">
+    <ul>
+        <li><a href="#event-types">Event Types</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#marketplace">Marketplace</a></li>
+        <li><a href="#live-events">Live Events</a></li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <div class="section" id="event-types">
+        <h2>Event Types</h2>
+        <div class="cards">
+            <div class="card">In-Person Events</div>
+            <div class="card">Virtual Events</div>
+            <div class="card">Hybrid Events</div>
+        </div>
+    </div>
+
+    <div class="section" id="products">
+        <h2>Products</h2>
+        <div class="cards">
+            <div class="card">Event Planning & Management Tool</div>
+            <div class="card">Registration & Ticketing Tool</div>
+            <div class="card">Venue Selection Tool</div>
+            <div class="card">Event Marketing Tool</div>
+        </div>
+    </div>
+
+    <div class="section" id="pricing">
+        <h2>Pricing</h2>
+        <p>Explore our flexible pricing plans tailored to your needs.</p>
+    </div>
+
+    <div class="section" id="marketplace">
+        <h2>Marketplace</h2>
+        <p>Discover vendors and services for your event needs.</p>
+    </div>
+
+    <div class="section" id="live-events">
+        <h2>Live Events</h2>
+        <p>Manage and track your live event activities here.</p>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; 2024 Eventify. All rights reserved.
+</div>
+
+</body>
+</html>
